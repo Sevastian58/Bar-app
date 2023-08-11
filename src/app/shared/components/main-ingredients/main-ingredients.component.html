@@ -1,0 +1,7 @@
+<h2 class="text-center mt-2 text-danger">Algunos de nuestros ingredientes</h2>
+<div class="d-flex flex-wrap p-5 justify-content-center">
+  <div *ngFor="let item of ingredients" class="banner-ingrediente-item m-1">
+    <img src="https://www.thecocktaildb.com/images/ingredients/{{ item.strIngredient | lowercase }}-Medium.png" alt="{{ item.strIngredient }}" width="100%">
+  </div>
+</div>
+
