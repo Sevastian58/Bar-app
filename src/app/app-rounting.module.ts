@@ -19,7 +19,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: 'bebidas/byIngredient' // Redirigir rutas desconocidas a 'byName'
+    redirectTo: 'menu' // Redirigir rutas desconocidas a 'byName'
   }
 ];
 
