@@ -18,8 +18,9 @@ export class BebidaService {
   }
 
   searchByName(term:string):Observable<drinks[]>{
-    const url = `${this.apiUrl}filter.php?f=${term}`
-    return this.http.get<drinks[]>(url)
+    const url = `${this.apiUrl}search.php?s=${term}`
+    return this.http.get<{ drinks: drinks[] }>(url).pipe(
+      map(response => response.drinks))
   }
 
   searchById(term:string):Observable<drinks>{
