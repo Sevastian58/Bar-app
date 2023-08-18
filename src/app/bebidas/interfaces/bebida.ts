@@ -49,7 +49,8 @@ export interface drinks {
       "strImageSource": string,
       "strImageAttribution": string,
       "strCreativeCommonsConfirmed": string,
-      "dateModified": string
+      "dateModified": string,
+      "drinks":drinks[]
   }
 
   export interface ingredients

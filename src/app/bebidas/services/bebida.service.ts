@@ -10,6 +10,22 @@ export class BebidaService {
 
   private apiUrl:string = 'https://www.thecocktaildb.com/api/json/v1/1/'
 
+  searchByIngredient(term:string):Observable<drinks[]>{
+    const url = `${this.apiUrl}filter.php?i=${term}`
+    return this.http.get<{ drinks: drinks[] }>(url).pipe(
+      map(response => response.drinks)
+    );
+  }
+
+  searchByName(term:string):Observable<drinks[]>{
+    const url = `${this.apiUrl}filter.php?f=${term}`
+    return this.http.get<drinks[]>(url)
+  }
+
+  searchById(term:string):Observable<drinks>{
+    const url = `${this.apiUrl}lookup.php?i=${term}`
+    return this.http.get<drinks>(url)
+  }
   searchIngredient(term: string): Observable<ingredients> {
     const url = `${this.apiUrl}search.php?i=${term}`;
     return this.http.get<{ ingredients: ingredients[] }>(url).pipe(

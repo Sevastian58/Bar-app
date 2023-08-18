@@ -1,0 +1,44 @@
+<div class="d-flex flex-row">
+  <div class="bebida-left text-center">
+    <img src="{{drink.strDrinkThumb}}">
+    <div>
+      <!--<span><b>{{drink.strDrink}}</b></span>-->
+      <h4>{{drink.strDrink}}</h4>
+    </div>
+  </div>
+  <div class="bebida-rigth">
+    <div class="ingredientes m-4">
+      <h3>Ingredientes</h3>
+      <ul>
+        <li *ngIf="drink.strIngredient1!=null">
+          {{drink.strIngredient1}}
+        </li>
+        <li *ngIf="drink.strIngredient2!=null">
+          {{drink.strIngredient2}}
+        </li>
+        <li *ngIf="drink.strIngredient3!=null">
+          {{drink.strIngredient3}}
+        </li>
+        <li *ngIf="drink.strIngredient4!=null">
+          {{drink.strIngredient4}}
+        </li>
+        <li *ngIf="drink.strIngredient5!=null">
+          {{drink.strIngredient5}}
+        </li>
+      </ul>
+
+    </div>
+    <div class="receta m-4">
+      <h3>Preparación</h3>
+      <div *ngIf="drink.strInstructionsES!=null">
+        <p>{{drink.strInstructionsES}}</p>
+      </div>
+      <div *ngIf="drink.strInstructionsES==null">
+        <p>{{drink.strInstructions}}</p>
+      </div>
+    </div>
+    <div class="volver text-center">
+      <button class="btn btn-danger" type="button" (click)="onBack()">Volver</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+.bebida-left{
+  width: 50%;
+}
+.bebida-left>img{
+  width: 30rem;
+}
+.bebida-rigth{
+  width: 50%;
+}

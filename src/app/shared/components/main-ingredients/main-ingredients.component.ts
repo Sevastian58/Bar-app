@@ -18,13 +18,11 @@ export class MainIngredientsComponent {
 
 
   public llenarIngredientes():void{
-    console.log('se ejecuta el metodo')
     let ingredientes: string[]=['gin', 'applejack', 'scotch', 'brandy', 'amaretto', 'tea', 'champagne', 'tequila']
     for(let item of ingredientes){
       this.bebidaService.searchIngredient(item).subscribe(response => {
         if (response.idIngredient) {
           this.ingredients.push(response);
-          console.log('Ingredientes actuales:', this.ingredients);
         }
       })
     }

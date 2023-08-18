@@ -12,8 +12,15 @@ export class NavBarComponent {
 
   }
 
-  onRedirectByIngredient():void{
-    alert('hola')
+  onRedirectByName():void{
     this.router.navigate(['/bebidas/byName'])
+  }
+
+  onRedirectByIngredient():void{
+    this.router.navigate(['/bebidas/byIngredient'])
+  }
+
+  onRedirectHome():void{
+    this.router.navigate(['/menu/principal'])
   }
 }

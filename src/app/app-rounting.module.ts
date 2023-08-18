@@ -15,13 +15,15 @@ const routes: Routes = [
   {
     path: '', // Ruta por defecto, cargar componente o página de inicio si es necesario
     pathMatch: 'full', // Asegura que solo coincida con la ruta vacía
-    redirectTo: 'menu' // Redirigir a 'menu' por defecto
+    redirectTo: 'bebidas/byIngredient' // Redirigir a 'byName' por defecto
   },
   {
     path: '**',
-    redirectTo: 'menu' // Redirigir rutas desconocidas a 'menu'
+    redirectTo: 'bebidas/byIngredient' // Redirigir rutas desconocidas a 'byName'
   }
 ];
+
+
 
 @NgModule({
   imports: [

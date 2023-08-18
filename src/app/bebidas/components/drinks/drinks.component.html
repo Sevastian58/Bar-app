@@ -1,0 +1,6 @@
+<div class="d-flex flex-wrap p-5 justify-content-center">
+  <a *ngFor="let item of drinks" class="banner-ingrediente-item m-1 text-center" [routerLink]="['/bebidas/bebida', item.idDrink]">
+    <img src="{{item.strDrinkThumb}}" width="100%">
+    <span class="btn btn-danger botton-img">{{item.strDrink}}</span>
+  </a>
+</div>
