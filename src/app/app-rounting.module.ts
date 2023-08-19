@@ -15,7 +15,7 @@ const routes: Routes = [
   {
     path: '', // Ruta por defecto, cargar componente o página de inicio si es necesario
     pathMatch: 'full', // Asegura que solo coincida con la ruta vacía
-    redirectTo: 'bebidas/byIngredient' // Redirigir a 'byName' por defecto
+    redirectTo: 'menu' // Redirigir a 'byName' por defecto
   },
   {
     path: '**',
@@ -27,7 +27,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes, { useHash: true }),
     MenuRoutingModule
   ],
   exports: [
