@@ -38,4 +38,9 @@ export class BebidaService {
     const url = `${this.apiUrl}search.php?s=${term}`
     return this.http.get<drinks[]>(url)
   }
+
+  searchRandom():Observable<drinks>{
+    const url = `${this.apiUrl}random.php`;
+    return this.http.get<drinks>(url)
+  }
 }

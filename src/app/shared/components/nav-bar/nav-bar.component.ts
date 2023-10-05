@@ -23,4 +23,10 @@ export class NavBarComponent {
   onRedirectHome():void{
     this.router.navigate(['/menu/principal'])
   }
+  onRedirectAboutMe():void{
+    this.router.navigate(['/aboutMe/principal'])
+  }
+  onRedirectContact():void{
+    this.router.navigate(['/contact/principal'])
+  }
 }

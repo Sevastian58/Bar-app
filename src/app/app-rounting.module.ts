@@ -9,6 +9,14 @@ const routes: Routes = [
     loadChildren: () => import('./menu/menu.module').then(modulo => modulo.MenuModule)
   },
   {
+    path: 'aboutMe',
+    loadChildren: () => import('./about-me/about-me.module').then(modulo => modulo.AboutMeModule)
+  },
+  {
+    path: 'contact',
+    loadChildren: () => import('./contact/contact.module').then(modulo => modulo.ContactModule)
+  },
+  {
     path: 'bebidas',
     loadChildren: () => import('./bebidas/bebidas.module').then(modulo => modulo.BebidasModule)
   },

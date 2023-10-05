@@ -1,0 +1,12 @@
+#img-contact{
+  width: 20vw;
+  min-width: 300px;
+}
+#img-contact>img{
+  width:inherit;
+}
+#descripcion-contact{
+  width: 55vw;
+  min-width: 300px;
+  padding: 2rem;
+}

@@ -1,0 +1,79 @@
+@keyframes EntrarDesdeIzq {
+  from{
+    transform: translateX(-150%);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+@keyframes EntrarDesdeArriba {
+  from{
+    transform: translateY(-200%);
+  }
+  to{
+    transform: translateY(0);
+  }
+}
+@keyframes show {
+  from{
+    opacity: 0;
+    scale: 25%;
+  }
+  to{
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+#imagen-coctel-random
+{
+  width: 40%;
+  min-width: 290px;
+}
+#descripcion-coctel-random{
+  width: 40%;
+}
+.banner-drink-item>a{
+  width: 14rem;
+  display: block;
+}
+.banner-drink-item>a>img{
+  width: 14rem;
+  height: 14rem;
+  display: block;
+}
+.banner-drink-item>a{
+  text-decoration: none;
+}
+.banner-drink-item-descripcion{
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+#obten-informacion{
+  background-color: rgba(0, 0, 0, 0.863);
+  color: white;
+  position: relative;
+  view-timeline-name: --info;
+  view-timeline-axis: block;
+  animation-timeline: --info;
+  animation-name: show;
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
+}
+#botones-coctel-random{
+  min-width: 290px;
+}
+#someoneProductos{
+  view-timeline-name: --product;
+  view-timeline-axis: block;
+  animation-timeline: --product;
+  animation-name: EntrarDesdeIzq;
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
+}
+
+
+
+
+

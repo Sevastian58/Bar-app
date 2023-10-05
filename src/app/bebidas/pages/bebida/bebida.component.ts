@@ -87,6 +87,6 @@ export class BebidaComponent implements OnInit{
   }
 
   public onBack():void{
-    this.router.navigate(['/bebidas/by-ingredient']);
+    this.router.navigate(['/menu/principal']);
   }
 }

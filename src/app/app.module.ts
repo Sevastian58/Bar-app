@@ -6,6 +6,9 @@ import { BebidasModule } from './bebidas/bebidas.module';
 import { SharedModule } from './shared/shared.module';
 import { MenuModule } from './menu/menu.module';
 import { AppRountingModule } from './app-rounting.module';
+import { AboutMeModule } from './about-me/about-me.module';
+import { ContactComponent } from './contact/components/contact/contact.component';
+import { ContactModule } from './contact/contact.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +19,8 @@ import { AppRountingModule } from './app-rounting.module';
     BebidasModule,
     SharedModule,
     MenuModule,
+    AboutMeModule,
+    ContactModule,
     HttpClientModule,
     AppRountingModule
   ],

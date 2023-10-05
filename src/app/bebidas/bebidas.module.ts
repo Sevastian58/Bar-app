@@ -6,6 +6,7 @@ import { BebidasRoutingModule } from './bebidas-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { DrinksComponent } from './components/drinks/drinks.component';
 import { BebidaComponent } from './pages/bebida/bebida.component';
+import { AboutMeComponent } from '../about-me/components/about-me/about-me.component';
 
 
 
@@ -14,7 +15,7 @@ import { BebidaComponent } from './pages/bebida/bebida.component';
     ByNameComponent,
     ByIngredientComponent,
     DrinksComponent,
-    BebidaComponent
+    BebidaComponent,
   ],
   imports: [
     CommonModule,

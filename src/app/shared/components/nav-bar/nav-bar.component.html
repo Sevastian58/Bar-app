@@ -1,5 +1,12 @@
 <div class="d-flex flex-row pt-1 justify-content-center bg-danger navbar">
   <div class="item m-4 text-light" (click)="onRedirectHome()">Inicio</div>
-  <div class="item m-4 text-light" (click)="onRedirectByName()">Buscar Bebida por Nombre</div>
-  <div class="item m-4 text-light" (click)="onRedirectByIngredient()">Buscar Bebida por Ingrediente</div>
+  <div class="item m-4 text-light dropdown">
+    Buscar
+    <div class="dropdown-content bg-danger">
+      <div class="item m-4 text-light" (click)="onRedirectByName()">Por nombre</div>
+      <div class="item m-4 text-light" (click)="onRedirectByIngredient()">Por Ingrediente</div>
+    </div>
+  </div>
+  <div class="item m-4 text-light" (click)="onRedirectAboutMe()">Sobre Nosotros</div>
+  <div class="item m-4 text-light" (click)="onRedirectContact()">Contacto</div>
 </div>

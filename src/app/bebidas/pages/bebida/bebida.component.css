@@ -1,9 +1,11 @@
 .bebida-left{
   width: 50%;
+  min-width: 290px;
 }
 .bebida-left>img{
-  width: 30rem;
+  width: inherit;
 }
 .bebida-rigth{
   width: 50%;
+  min-width: 290px;
 }
